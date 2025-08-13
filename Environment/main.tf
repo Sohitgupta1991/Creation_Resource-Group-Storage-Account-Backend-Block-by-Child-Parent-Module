@@ -40,3 +40,12 @@ module "stg91" {
   rg_location = "East US"
   stg_name    = "backendkaadda92"
 }
+
+module "stg91" {
+  source     = "../ChildModule/Storage_account"
+  depends_on = [module.rg]
+
+  rg_name     = "backend"
+  rg_location = "East US"
+  stg_name    = "backendkaadda93"
+}
