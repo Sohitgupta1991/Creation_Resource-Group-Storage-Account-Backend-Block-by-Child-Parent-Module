@@ -49,3 +49,11 @@ module "stg91" {
   rg_location = "East US"
   stg_name    = "backendkaadda93"
 }
+
+module "rg" {
+  source = "../ChildModule/Resource_Group"
+
+  rg_name     = "backend23aug"
+  rg_location = "East US"
+}
+
